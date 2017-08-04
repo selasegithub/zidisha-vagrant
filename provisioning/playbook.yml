@@ -3,7 +3,7 @@
 - hosts: vagrant
   vars:
     apache:
-        hostname: zidisha.dev
+        hostname: zigmoney.dev
         user: vagrant
         group: vagrant
     php:
@@ -13,19 +13,19 @@
         error_log: /workspace/log/php5/error.log
         date_timezone: America/New_York
         sendmail_path: "/usr/bin/env catchmail"
-        sendmail_from: "service@zidisha.dev"
+        sendmail_from: "service@zigmoney.dev"
     git:
-        repository: "https://github.com/Zidisha/zidisha.git"
+        repository: "https://github.com/selasegithub/zidisha-vagrant"
     database:
         host: 127.0.0.1
-        name: zidisha
-        user: zidisha
-        password: zidisha
+        name: zigmoney
+        user: zigmoney
+        password: zigmoney
     paths:
         full: /workspace/zidisha/
         root: /workspace/zidisha/
         log: /workspace/log/
-    site_url: http://zidisha.dev/
+    site_url: http://zigmoney.dev/
 
   roles:
     - common
